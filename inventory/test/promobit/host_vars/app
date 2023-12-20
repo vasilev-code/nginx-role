@@ -1,0 +1,3 @@
+ansible_user: usertask
+ansible_password: usertaskpass
+ansible_become_password: usertaskpass

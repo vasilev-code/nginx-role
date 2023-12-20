@@ -17,7 +17,7 @@
 #Копируем страницу промобит
   - name: Copying promobit page in to www directory
     copy:
-      src: /home/usertask/install_nginx/index.html
+      src: /home/usertask/promobitTask/files/index.html
       dest: /var/www/html/index.html
       owner: www-data
       group: www-data

@@ -1,0 +1,6 @@
+[promobit-task]
+app ansible_host=158.160.139.140
+
+[all:children]
+promobit-task
+
