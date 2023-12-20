@@ -1,2 +1,21 @@
 ---
 # tasks file for install_nginx
+#Обновляем пакеты
+- name: Update apt
+  apt:
+    update_cache: true
+
+#Устанавливаем Nginx
+- name: Install nginx
+  apt:
+    name: nginx
+    state: latest
+
+#Копируем страницу промобит
+ - name: Copying promobit page in to www directory
+    copy:
+      src: /home/usertask/install_nginx/index.html
+      dest: /var/www/html/index.html
+      owner: www-data
+      group: www-data
+      mode: '0644'
